@@ -7,8 +7,40 @@
     <title>login and register</title>
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
-  <body>
-    <h1 class="text-red-500">Hello</h1>
+  <body class="font-inter">
+    <main class="mx-auto mt-20 font-inter">
+      <h1 class="text-center text-2xl font-semibold text-slate-950">
+        user login details
+      </h1>
+
+      <!-- table -->
+      <div class="overflow-x-auto mt-10 max-w-3xl mx-auto">
+        <table class="min-w-full shadow-lg">
+          <thead>
+            <tr class="bg-slate-900 text-white">
+              <th class="py-3 px-4 text-left">IP Address of login</th>
+              <th class="py-3 px-4 text-left">place of login</th>
+              <th class="py-3 px-4 text-left">Date of login</th>
+              <th class="py-3 px-4 text-left">Time of login</th>
+              <th class="py-3 px-4 text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody class="text-blue-gray-900">
+            <tr class="border-b border-blue-gray-200">
+              <td class="py-3 px-4">Company A</td>
+              <td class="py-3 px-4">$50.25</td>
+              <td class="py-3 px-4">100</td>
+              <td class="py-3 px-4">$5025.00</td>
+              <td class="py-3 px-4">
+                <a href="#" class="font-medium text-red-600 hover:text-red-800"
+                  >Report</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

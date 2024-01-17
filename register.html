@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login and register</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body class="0">
+    <main class="max-w-md mx-auto mt-10 font-inter bg-white">
+      <h1 class="text-center text-2xl font-semibold text-slate-950">
+        Create Account
+      </h1>
+
+      <!-- form -->
+      <form name="register" class="px-8 pb-6 mt-8 space-y-8">
+        <!-- firstname -->
+        <div class="input-div">
+          <label>First Name</label>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
+        <!-- last name -->
+        <div class="input-div">
+          <label>Last Name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <!-- email -->
+        <div class="input-div">
+          <label>Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <!-- password -->
+        <div class="input-div">
+          <label>password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <!-- confirm password -->
+        <div class="input-div">
+          <label>Confirm password</label>
+          <input type="password" name="cpass" id="cpass" />
+        </div>
+
+        <button
+          class="bg-slate-950 text-white font-semibold text-center px-4 py-2 w-full rounded-sm"
+        >
+          Create
+        </button>
+      </form>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
