@@ -12,27 +12,30 @@
       <h1 class="text-center text-2xl font-semibold text-slate-950">Log in</h1>
 
       <!-- form -->
-      <form name="register" class="px-8 pb-6 mt-8 space-y-8">
+      <form name="login" class="px-8 pb-6 mt-8 flex flex-col gap-8">
         <!-- email -->
         <div class="input-div">
           <label>Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
         <!-- password -->
         <div class="input-div">
           <label>password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" name="password" id="password" required />
         </div>
-
-        <!-- confirm password -->
 
         <button
           class="bg-slate-950 text-white font-semibold text-center px-4 py-2 w-full rounded-sm"
         >
-          Log in
+          Sign in
         </button>
       </form>
+      <a
+        href="./register.html"
+        class="capitalize font-medium text-sm text-slate-700 mt-1 px-8 hover:text-slate-800"
+        >Create Account</a
+      >
     </main>
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/login.js"></script>
   </body>
 </html>
