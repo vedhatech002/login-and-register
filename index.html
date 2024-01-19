@@ -5,31 +5,60 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login and register</title>
+
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body class="font-inter">
-    <main class="mx-auto mt-20 font-inter">
-      <h1 class="text-center text-2xl font-semibold text-slate-950">
-        user login details
-      </h1>
-
+    <main class="mx-auto mt-20 font-inter max-w-3xl px-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-left text-xl font-semibold text-slate-950 flex gap-2">
+          Yours Login Details,
+        </h1>
+        <div
+          class="flex items-center cursor-pointer text-slate-950 text-lg"
+          id="logout"
+        >
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2"
+              />
+              <path
+                fill="currentColor"
+                d="M16.795 16.295c.39.39 1.02.39 1.41 0l3.588-3.588a1 1 0 0 0 0-1.414l-3.588-3.588a.999.999 0 0 0-1.411 1.411L18.67 11H10a1 1 0 0 0 0 2h8.67l-1.876 1.884a.999.999 0 0 0 .001 1.411"
+              />
+            </svg>
+          </span>
+          <span>Logout</span>
+        </div>
+      </div>
       <!-- table -->
-      <div class="overflow-x-auto mt-10 max-w-3xl mx-auto">
+      <div class="overflow-x-auto mt-6">
         <table class="min-w-full shadow-lg">
           <thead>
             <tr class="bg-slate-900 text-white">
-              <th class="py-3 px-4 text-left">IP Address of login</th>
-              <th class="py-3 px-4 text-left">place of login</th>
-              <th class="py-3 px-4 text-left">Date of login</th>
-              <th class="py-3 px-4 text-left">Time of login</th>
-              <th class="py-3 px-4 text-left">Action</th>
+              <th class="py-3 px-4 text-left whitespace-nowrap">
+                IP Address of login
+              </th>
+              <th class="py-3 px-4 text-left whitespace-nowrap">
+                Date of login
+              </th>
+              <th class="py-3 px-4 text-left whitespace-nowrap">
+                Time of login
+              </th>
+              <th class="py-3 px-4 text-left whitespace-nowrap">Action</th>
             </tr>
           </thead>
-          <tbody class="text-blue-gray-900">
+          <tbody class="bg-[#f6eded]" id="tbody">
             <tr class="border-b border-blue-gray-200">
               <td class="py-3 px-4">Company A</td>
               <td class="py-3 px-4">$50.25</td>
-              <td class="py-3 px-4">100</td>
               <td class="py-3 px-4">$5025.00</td>
               <td class="py-3 px-4">
                 <a href="#" class="font-medium text-red-600 hover:text-red-800"
@@ -41,6 +70,11 @@
         </table>
       </div>
     </main>
-    <!-- <script type="module" src="./src/js/main.js"></script> -->
+    <script type="module" src="./src/js/main.js"></script>
+    <!-- <script>
+      function report() {
+        alert("login reported sucessfully");
+      }
+    </script> -->
   </body>
 </html>

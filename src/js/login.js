@@ -81,6 +81,7 @@ validation.onSuccess(async (e) => {
         }
       }
       setLocalStorage(userDetailsArr);
+      sessionStorage.setItem("userid", el.id);
       location.href = "./index.html";
     });
   });
